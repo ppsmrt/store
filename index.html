@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Shop UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <h1>XE</h1>
+        <input type="text" placeholder="Search...">
+    </nav>
+
+    <!-- Product List -->
+    <section class="product-list" id="productList">
+        <!-- Products dynamically injected by JS -->
+    </section>
+
+    <!-- Product Detail Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <img id="modalImage" src="" alt="Product">
+            <h2 id="modalTitle"></h2>
+            <p id="modalPrice"></p>
+            <div class="sizes">
+                <button class="size-btn">US 6</button>
+                <button class="size-btn">US 7</button>
+                <button class="size-btn">US 8</button>
+                <button class="size-btn">US 9</button>
+            </div>
+            <div class="colors">
+                <span class="color-btn" style="background-color: yellow;"></span>
+                <span class="color-btn" style="background-color: red;"></span>
+                <span class="color-btn" style="background-color: pink;"></span>
+                <span class="color-btn" style="background-color: blue;"></span>
+            </div>
+            <button id="addToCartBtn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="cart" id="cart">
+        <h2>My Cart</h2>
+        <ul id="cartItems"></ul>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">$0</span>
+        </div>
+        <button id="checkoutBtn">Check Out</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
